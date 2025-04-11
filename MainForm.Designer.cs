@@ -33,7 +33,6 @@
             this.tsddbDebug = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsmiLoadSampleData = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiEraseData = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbAbout = new System.Windows.Forms.ToolStripButton();
             this.cbClasses = new System.Windows.Forms.ComboBox();
             this.gbClass = new System.Windows.Forms.GroupBox();
             this.lblClassAverages = new System.Windows.Forms.Label();
@@ -78,8 +77,7 @@
             // tsMain
             // 
             this.tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsddbDebug,
-            this.tsbAbout});
+            this.tsddbDebug});
             this.tsMain.Location = new System.Drawing.Point(0, 0);
             this.tsMain.Name = "tsMain";
             this.tsMain.Size = new System.Drawing.Size(634, 25);
@@ -111,15 +109,6 @@
             this.tsmiEraseData.Size = new System.Drawing.Size(180, 22);
             this.tsmiEraseData.Text = "Erase Data";
             this.tsmiEraseData.Click += new System.EventHandler(this.tsmiEraseData_Click);
-            // 
-            // tsbAbout
-            // 
-            this.tsbAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbAbout.Image = ((System.Drawing.Image)(resources.GetObject("tsbAbout.Image")));
-            this.tsbAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAbout.Name = "tsbAbout";
-            this.tsbAbout.Size = new System.Drawing.Size(44, 22);
-            this.tsbAbout.Text = "About";
             // 
             // cbClasses
             // 
@@ -528,7 +517,6 @@
         private System.Windows.Forms.ComboBox cbClasses;
         private System.Windows.Forms.ToolStripMenuItem tsmiLoadSampleData;
         private System.Windows.Forms.ToolStripMenuItem tsmiEraseData;
-        private System.Windows.Forms.ToolStripButton tsbAbout;
         private System.Windows.Forms.GroupBox gbClass;
         private System.Windows.Forms.Button btnClassCreate;
         private System.Windows.Forms.Button btnClassDelete;

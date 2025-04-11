@@ -29,4 +29,10 @@ if (Test-Path -Path $TempZipFile) {
     # Clean up the temporary ZIP file
     Remove-Item -Path $TempZipFile -Force
     Write-Host "Removed temporary file: $($TempZipFile)"
+
+    $wshell = New-Object -ComObject WScript.Shell
+    $shortcut = $wshell.CreateShortcut("$env:PUBLIC\Desktop\GradeApp.lnk")
+    $shortcut.TargetPath = "C:\GradeApp\GradeApp.exe"
+    $shortcut.Save()
+    Write-Host "Created Desktop Shortcut for All Users"
 }
